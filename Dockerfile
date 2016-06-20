@@ -1,19 +1,17 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 ENV PHP_VERSION=7.0
 
-RUN apt-get install -y language-pack-en-base software-properties-common \
- && LC_ALL=en_GB.UTF-8 add-apt-repository ppa:ondrej/php -y \
- && apt-get update \
+RUN apt-get update \
  && apt-get install -y -q \
     ca-certificates \
     git \
     zip \
     curl \
     php-cli \
-    php7.0 \
-    php7.0-fpm \
-    php7.0-common \
+    php \
+    php-fpm \
+    php-common \
     php-json \
     php-xml \
     php-mbstring \
