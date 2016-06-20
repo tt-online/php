@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 ENV PHP_VERSION=7.0 \
-    && OS=UBUNTU_16.04
+    OS=UBUNTU_16.04
 
 RUN apt-get update \
  && apt-get install -y -q \
